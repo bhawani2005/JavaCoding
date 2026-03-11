@@ -1,3 +1,9 @@
+/*
+ * * * *
+   * * *
+     * *
+       *
+ */
 package patternQuestion;
 
 import java.util.Scanner;
