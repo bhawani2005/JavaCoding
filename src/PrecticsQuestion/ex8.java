@@ -7,7 +7,7 @@
 5 11 
 6
  */
-package PrecticsQuestion;
+package precticsQuestion;
 
 import java.util.Scanner;
 

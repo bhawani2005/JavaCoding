@@ -6,7 +6,7 @@ Enter the value of n: 4
       37 41 
          43 
 */
-package PrecticsQuestion;
+package precticsQuestion;
 
 import java.util.Scanner;
 

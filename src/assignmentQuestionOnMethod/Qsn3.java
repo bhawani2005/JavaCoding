@@ -1,6 +1,6 @@
 package assignmentQuestionOnMethod;
 
-public class PrintEvenNumberUpto20 {
+public class Qsn3 {
 	public static void main(String[] args) {
 		printEvenNumber();
 	}

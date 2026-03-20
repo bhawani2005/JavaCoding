@@ -1,6 +1,6 @@
 package assignmentQuestionOnMethod;
 
-public class PrintNumber {
+public class Qsn2 {
 	public static void main(String[] args) {
 		printNumber();
 	}

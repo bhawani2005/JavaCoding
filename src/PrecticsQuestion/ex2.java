@@ -1,4 +1,4 @@
-package PrecticsQuestion;
+package precticsQuestion;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
 package assignmentQuestionOnMethod;
 
-public class PrintTable {
+public class Qsn4 {
 	public static void main(String[] args) {
 		printTable();
 	}
