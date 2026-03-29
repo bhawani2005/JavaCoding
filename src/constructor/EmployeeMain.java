@@ -17,7 +17,6 @@ public class EmployeeMain {
 	}
 }
 
-
 class Employee{
 	String name;
 	int employeeId;
