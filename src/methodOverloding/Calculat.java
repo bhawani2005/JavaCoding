@@ -31,7 +31,7 @@ public class Calculat {
 			int a = sc.nextInt();
 			System.out.println("Enter a Second number: ");
 			int b = sc.nextInt();
-			
+			sc.close();
 		}
 		
 		}
