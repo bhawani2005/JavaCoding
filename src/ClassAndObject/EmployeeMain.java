@@ -1,4 +1,4 @@
-package ClassAndObject;
+package classAndObject;
 
 class Employee{
 	public String name;

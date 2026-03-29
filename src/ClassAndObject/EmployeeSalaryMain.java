@@ -1,4 +1,4 @@
-package ClassAndObject;
+package classAndObject;
 
 public class EmployeeSalaryMain {
 	public static void main(String[] args) {
