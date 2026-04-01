@@ -38,8 +38,6 @@ class Product{
 class DiscountProduct extends Product{
 	double discount;
 	
-	
-	
 	public DiscountProduct(String productName, double price, int quantity) {
 		super(productName, price, quantity);
 	}
@@ -50,14 +48,10 @@ class DiscountProduct extends Product{
 		this.discount = discount;
 	}
 
-
-	}
-
 	public void displayDetails() {
 		super.displayDetails();
 		System.out.println("Discount: "+discount);
 	}
-
 	public void calculateFinalAmount() {
 		double total = super.calculateTotal();
 		double finalAmount = total-(total*(discount/100));

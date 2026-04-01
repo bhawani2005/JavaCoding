@@ -13,6 +13,13 @@ class Employee{
 	int id;
 	double salary;
 	
+	public Employee(String name, int id, double salary) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.salary = salary;
+	}
+
 	public void displayDetails(){
 		System.out.println("Name: "+name);
 		System.out.println("Id: "+id);
@@ -25,13 +32,9 @@ class Employee{
 
 class BonusEmployee extends Employee{
 	double bonus;
-	
-	
-	
-	public BonusEmployee(String name,int id, double salary,double bonus) {
-		this.name = name;
-		this.id = id;
-		this.salary = salary;
+
+	public BonusEmployee(String name, int id, double salary, double bonus) {
+		super(name, id, salary);
 		this.bonus = bonus;
 	}
 
