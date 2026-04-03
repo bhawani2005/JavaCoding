@@ -3,12 +3,48 @@ package inheritance;
 
 public class OnlineShoppingAndDeliverySystem {
 	public static void main(String[] args) {
+		Customer c1 = new Customer("Bhawani Shankar", 601, "Jharkhand");
+		PrimeCoustomer pc1 = new PrimeCoustomer("Ankit Rathore", 602, "Odisha", "Gold", "599");
+		Seller s1 = new Seller("Bibak", 506, "Gouri Varity Shop");
+		DeliveryPartner dp1 = new DeliveryPartner("Aanish", 302, "Bike");
+		Products p1 = new Products("Kurkure", 6, 50);
+		DiscountProducts dpr1 = new DiscountProducts("Apple", 10, 40, 10);
+		ElectronicsProduct ep1 = new ElectronicsProduct("Fan", 15, 3550, 2);
+		Order o1 = new Order(102, 6);
+		OnlineOrder oo1 = new OnlineOrder(106, 14, 50);
+		InternationalOrder io1 = new InternationalOrder(110, 409, 100, 600);
 		
+		
+		System.out.println("Customer: ");
+		c1.login();
+		c1.displayDetails();
+		c1.logout();
+		
+		System.out.println("Prime Coustomer: ");
+		pc1.calculateDiscount(2000);
+		
+		System.out.println("Seller: ");
+		s1.addProduct();
+		
+		System.out.println("Delivery Patner: ");
+		dp1.deliverOrder();
+		
+		System.out.println("Product");
+		p1.calculateTotal();
+		
+		System.out.println("Discount Product: ");
+		dpr1.calculateFinalPrice();
+		
+		System.out.println("Online Order: ");
+		oo1.calculateFinalAmount();
+		
+		System.out.println("International Order: ");
+		io1.calculateFinalAmount();
 	}
 }
 
 
-//User Section
+//User Section for Customer, primeCoustomer, seller and Delivery Partner
 
 class User{
 	String name;
@@ -34,11 +70,11 @@ class User{
 
 //Customer section
 
-class Coustomer extends User{
+class Customer extends User{
 	
 	String address;
 
-	public Coustomer(String name, int id, String address) {
+	public Customer(String name, int id, String address) {
 		super(name, id);
 		this.address = address;
 	}
@@ -57,7 +93,7 @@ class Coustomer extends User{
 	}
 }
 
-class PrimeCoustomer extends Coustomer{
+class PrimeCoustomer extends Customer{
 	String membershipType;
 	String membershipFee;
 	
@@ -145,7 +181,6 @@ class Products{
 	int quantity;
 	
 	public Products(String productName, double price, int quantity) {
-		super();
 		this.productName = productName;
 		this.price = price;
 		this.quantity = quantity;
