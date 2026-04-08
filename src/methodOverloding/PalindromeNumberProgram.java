@@ -12,7 +12,7 @@ class Palindrome{
 		return n==rev;
 	}
 	
-	public void checkPrime(int start, int end) {
+	public void checkPalindrom(int start, int end) {
 		for(int i=start; i<=end; i++) {
 			int temp = i, rev=0;
 			while(temp!=0) {
@@ -49,7 +49,7 @@ public class PalindromeNumberProgram {
 			int s=sc.nextInt();
 			System.out.println("Enter end value: ");
 			int e=sc.nextInt();
-			ob.checkPrime(s, e);;
+			ob.checkPalindrom(s, e);;
 			break;
 		}
 		default:
