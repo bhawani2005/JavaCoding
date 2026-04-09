@@ -6,7 +6,11 @@ public class MainClass {
 	}
 }
 
-class CardPayment{
+class Payment{
+	
+}
+
+class CardPayment extends Payment{
 	void pay() {
 		System.out.println("Payment done using card");
 	}
@@ -16,7 +20,7 @@ class CardPayment{
 	}
 }
 
-class UPIPayment{
+class UPIPayment extends Payment{
 	void pay() {
 		System.out.println("Payment done using UPI");
 	}
@@ -26,7 +30,7 @@ class UPIPayment{
 	}
 }
 
-class CashPayment{
+class CashPayment extends Payment{
 	void pay() {
 		System.out.println("Payment done using Cash");
 	}
@@ -36,7 +40,7 @@ class CashPayment{
 	}
 }
 
-class NetBankingPayment{
+class NetBankingPayment extends Payment{
 	void pay() {
 		System.out.println("Payment done using Net Banking");
 	}
@@ -47,7 +51,7 @@ class NetBankingPayment{
 }
 
 class PaymentProcessor{
-	void processPayment(???? p) {
+	void processPayment(Payment p) {
 		
 	}
 }
