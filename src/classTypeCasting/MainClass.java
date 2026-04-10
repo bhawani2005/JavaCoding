@@ -52,7 +52,26 @@ class NetBankingPayment extends Payment{
 
 class PaymentProcessor{
 	void processPayment(Payment p) {
-		
+		if(p instanceof CardPayment) {
+			CardPayment c = new CardPayment();
+			c.pay();
+			c.enterPin();
+		}
+		else if(p instanceof UPIPayment) {
+			UPIPayment u = new UPIPayment();
+			u.pay();
+			u.ScanQRCode();
+		}
+		else if(p instanceof CashPayment) {
+			CashPayment cp = new CashPayment();
+			cp.pay();
+			cp.countCash();
+		}
+		else {
+			NetBankingPayment nb = new NetBankingPayment();
+			nb.pay();
+			nb.loginBank();
+		}
 	}
 }
 
