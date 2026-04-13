@@ -15,7 +15,7 @@ public class E_CommerceAndPaymentSystem {
 		List<Product> products = new ArrayList<>();
 		products.add(p);
 		
-		Store s = new Store(customers, products);
+		//Store s = new Store(customers, products);
 		
 		PaymentGateway pg = new PaymentGateway();
 		pg.pay(c);
