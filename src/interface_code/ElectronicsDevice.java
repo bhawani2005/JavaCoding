@@ -6,7 +6,14 @@ public class ElectronicsDevice {
 		l.turnOn();
 		l.turnOff();
 		
-		Fun
+		Fan f = new Fan();
+		f.turnOn();
+		f.turnOff();
+		
+		Speaker s = new Speaker();
+		s.turnOn();
+		s.ConnectToWifi();
+		s.turnOff();
 	}
 }
 

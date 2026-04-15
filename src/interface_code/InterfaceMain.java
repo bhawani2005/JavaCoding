@@ -24,6 +24,7 @@ interface A{
 		System.out.println("Sit straight.");
 	}
 	
+	
 }
 
 class B implements A{
