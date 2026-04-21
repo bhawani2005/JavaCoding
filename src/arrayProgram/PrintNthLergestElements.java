@@ -34,5 +34,6 @@ public class PrintNthLergestElements {
 				}
 			}
 		}
+		sc.close();
 	}
 }

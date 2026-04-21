@@ -32,5 +32,6 @@ public class ReverseOfAArray {
 		}
 		
 		System.out.println("Reverse Array is "+Arrays.toString(arr));
+		sc.close();
 	}
 }
