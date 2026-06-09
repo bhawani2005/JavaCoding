@@ -18,7 +18,7 @@ public class PrintTheSubarrayGivenSum {
 		}
 		
 		printSubarrayByGivenTarget(arr, 15);
-		
+		sc.close();
 	}
 	
 	public static void printSubarrayByGivenTarget(int[]arr, int target) {

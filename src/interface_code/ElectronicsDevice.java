@@ -21,6 +21,7 @@ interface Electronic{
 	void turnOn();
 	
 	void turnOff();
+	
 }
 
 interface SmartDevice{

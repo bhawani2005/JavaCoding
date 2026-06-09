@@ -8,7 +8,7 @@ public class OnlinePaymentSystem {
 		c.generateOTP();
 		c.pay();
 		
-		DabitCard d = new DabitCard();
+		DebitCard d = new DebitCard();
 		d.checkBalance();
 		d.generateOTP();
 		d.pay();
@@ -38,13 +38,13 @@ class CraditCard implements Payment, GenerateOtp{
 	}
 	
 	public void generateOTP() {
-		System.out.println("OTP Generate....");
+		System.out.println("OTP Generated for Credit card transation....");
 	}
 }
 
-class DabitCard implements Payment, GenerateOtp{
+class DebitCard implements Payment, GenerateOtp{
 	public void pay() {
-		System.out.println("Payment done by Dabit Card");
+		System.out.println("Payment done by Debit Card");
 	}
 	
 	public void checkBalance() {
@@ -52,7 +52,7 @@ class DabitCard implements Payment, GenerateOtp{
 	}
 	
 	public void generateOTP() {
-		System.out.println("OTP Generate....");
+		System.out.println("OTP Generated for Dabit card transation....");
 	}
 }
 

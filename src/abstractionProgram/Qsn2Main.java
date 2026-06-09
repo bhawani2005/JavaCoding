@@ -6,9 +6,11 @@ import java.util.Scanner;
 public class Qsn2Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter Your choice: ");
 		int ch = sc.nextInt();
 		sc.nextLine();
+		
 		System.out.println("Enter your Massage: ");
 		String Msg = sc.nextLine();
 		

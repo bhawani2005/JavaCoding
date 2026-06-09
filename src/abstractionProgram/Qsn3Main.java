@@ -16,6 +16,8 @@ public class Qsn3Main {
 		
 		OrderService os = new OrderService();
 		os.placeOrder(dp, item);
+		
+		sc.close();
 	}
 }
 
