@@ -3,9 +3,9 @@ package vectorPrograms;
 public class GenericsDemo {
 	public static void main(String[] args) {
 		Employee e = new Employee("Kanha", 40000);
-		Student s = new Student("Rahul", 22);
+		Student1 s = new Student1("Rahul", 22);
 		
-		Process<Student> p = new Process<Student>(s);
+		Process<Student1> p = new Process<Student1>(s);
 		
 	}
 }
@@ -20,12 +20,12 @@ class Process<T>{
 
 }
 
-class Student{
+class Student1{
 	String name;
 	double age;
 	
 	
-	public Student(String name, double age) {
+	public Student1(String name, double age) {
 		super();
 		this.name = name;
 		this.age = age;
